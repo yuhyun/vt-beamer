@@ -1,0 +1,134 @@
+%
+%
+% This file contains all the text of the presentation.
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Title page info
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title[VT \BEAMER]{\LaTeX{ }\BEAMER for VT}
+\subtitle{A sample presentation with a VT theme}
+\author{Joe Presenter \texttt{joe.presenter@vt.edu}}
+%\titlegraphic{\includegraphics{burruss.jpg}}
+\institute{Virginia Tech CNS}
+\date{\today}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\titlepage
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Intrduction}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Introduction}{What the heck is this?}
+\begin{itemize}
+\item A presentation template for the \LaTeX package \BEAMER.
+\item \BEAMER theme files for a Virginia Tech look.
+\end{itemize}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Caveats}
+\begin{itemize}
+\item The current output will not display properly with Adobe Acrobat Reader
+if PNG graphics are included.  This is due to some issue with gamma.
+{\texttt kpdf} and other Unix PDF programs seem to work.
+\item Work is not complete on the handout, notes, and article versions.
+\item The color theme was developed with the \BEAMER theme Antibes.  It is
+unknown how well it will work with other themes.
+\end{itemize}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Colors}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Colors}{Orange and Maroon}
+\transdissolve
+\colorBar{vtredA}{white}
+\colorBar{vtredB}{white}
+\colorBar{vtmaroon}{white}
+\colorBar{vtredC}{white}
+\colorBar{vtredD}{white}
+\vfill
+\colorBar{vtorange}{white}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Colors}{Blues and Greens}
+\transboxout
+\colorBar{vtblueA}{white}
+\colorBar{vtblueB}{white}
+\colorBar{vtblueC}{white}
+\colorBar{vtblueD}{white}
+\vfill
+\colorBar{vtgreenA}{white}
+\colorBar{vtgreenB}{white}
+\colorBar{vtgreenC}{white}
+\colorBar{vtgreenD}{white}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Colors}{Browns and Golds}
+\transwipe[direction=90]
+\colorBar{vtbrownA}{black}
+\colorBar{vtbrownB}{black}
+\colorBar{vtbrownC}{black}
+\colorBar{vtbrownD}{black}
+\vfill
+\colorBar{vtgoldA}{black}
+\colorBar{vtgoldB}{black}
+\colorBar{vtgoldC}{black}
+\colorBar{vtgoldD}{black}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Colors}{Grays}
+\colorBar{vtgrayA}{white}
+\colorBar{vtgrayB}{white}
+\colorBar{vtgrayC}{white}
+\colorBar{vtgrayD}{white}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[containsverbatim]{Text Colors}
+\begin{itemize}
+\item \verb+alert{Text}+ $\Longrightarrow$ \alert{Text}
+\item \verb+structure{Text}+ $\Longrightarrow$ \structure{Text}
+\end{itemize}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Block Environments}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Block Environments}{Normal and Alert}
+\begin{block}{Block}
+The block text.
+\end{block}
+\begin{alertblock}{Alertblock}
+The alertblock text.
+\end{alertblock}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Theorem and Proof}
+\begin{theorem}{Theorem Title}
+The theorem text.
+\end{theorem}
+\begin{proof}{Proof Title}
+The proof text.
+\end{proof}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Example and Definition}
+\begin{example}{Example Title}
+The example text.
+\end{example}
+\begin{definition}{Definition Title}
+The definition text.
+\end{definition}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{References}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{References}
+\begin{itemize}
+\item \href{http://www.ctan.org/tex-archive/macros/latex/contrib/beamer/doc/beameruserguide.pdf}{Beamer User Guide}
+\item \href{http://faq.ktug.or.kr/wiki/uploads/beamer_guide.pdf}{Beamer 3.0 Guide}
+\item \href{ftp://ftp.dante.de/pub/tex/macros/latex/contrib/xcolor/xcolor.pdf}{xcolor}
+\item \href{http://www.tug.org/texmf-dist/doc/pdftex/manual/pdftex-a.pdf}{pdf\TeX}
+\item \href{http://www.tug.org/applications/hyperref/ftp/doc/manual.pdf}{hyperref}
+\end{itemize}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% END file

@@ -1,0 +1,114 @@
+%
+% beamercolorthemealbatross
+% Copyright 2007 by Till Tantau
+%
+% This file may be distributed and/or modified
+%
+% 1. under the LaTeX Project Public License and/or
+% 2. under the GNU Public License.
+%
+% See the file doc/licenses/LICENSE for more details.
+%
+
+%
+% VT Color Pallette
+% See https://secure.hosting.vt.edu/www.branding.unirel.vt.edu/web_guidelines.php
+% 
+% VT Reds
+% 
+\definecolor{vtredA}{RGB}{152,0,0}
+\definecolor{vtredB}{RGB}{122,0,0}
+% The official VT maroon
+\definecolor{vtmaroon}{RGB}{102,0,0}
+\definecolor{vtredC}{RGB}{92,0,0}
+\definecolor{vtredD}{RGB}{76,0,0}
+%
+% The official VT orange
+\definecolor{vtorange}{RGB}{255,102,0}
+%
+% VT Creams and Browns
+%
+\definecolor{vtbrownA}{RGB}{245,245,235}
+\definecolor{vtbrownB}{RGB}{237,234,218}
+\definecolor{vtbrownC}{RGB}{219,216,188}
+\definecolor{vtbrownD}{RGB}{157,152,121}
+%
+% VT Blues
+%
+\definecolor{vtblueA}{RGB}{147,167,179}
+\definecolor{vtblueB}{RGB}{85,112,130}
+\definecolor{vtblueC}{RGB}{60,91,111}
+\definecolor{vtblueD}{RGB}{18,37,44}
+%
+% VT Greens
+%
+\definecolor{vtgreenA}{RGB}{152,182,143}
+\definecolor{vtgreenB}{RGB}{121,148,108}
+\definecolor{vtgreenC}{RGB}{81,111,67}
+\definecolor{vtgreenD}{RGB}{48,80,32}
+%
+% VT Golds
+%
+\definecolor{vtgoldA}{RGB}{180,122,31}
+\definecolor{vtgoldB}{RGB}{168,97,7}
+\definecolor{vtgoldC}{RGB}{140,82,6}
+\definecolor{vtgoldD}{RGB}{153,51,0}
+%
+% VT Grays
+%
+\definecolor{vtgrayA}{RGB}{194,193,186}
+\definecolor{vtgrayB}{RGB}{100,100,100}
+\definecolor{vtgrayC}{RGB}{64,64,57}
+\definecolor{vtgrayD}{RGB}{51,51,51}
+
+
+\mode<presentation>
+
+\setbeamercolor{blackonwhite}{fg=black,bg=white}
+
+\setbeamercolor*{normal text}{fg=black,bg=vtbrownA}
+% red is the default alerted text
+%\setbeamercolor{alerted text}{fg=vtredA}
+
+\logo{\includegraphics[height=0.5cm]{vt_shield_tag_vtbrownA230.jpg}}
+%\logo{\includegraphics[height=0.5cm]{vt_shield_tag_transparent230.png}}
+
+\setbeamercolor*{example text}{fg=green!65!black}
+
+\setbeamercolor{structure}{fg=black}
+\setbeamercolor{upper separation line head}{fg=black,bg=vtorange}
+
+%\setbeamercolor{palette primary}{use={structure,normal text},fg=white,bg=vtredB}
+\setbeamercolor{palette primary}{fg=white,bg=vtmaroon}
+\setbeamercolor{palette secondary}{fg=white,bg=vtmaroon}
+\setbeamercolor{palette tertiary}{use={structure,normal text},fg=white,bg=vtredC}
+\setbeamercolor{palette quaternary}{use={structure,normal text},fg=white,bg=vtredD}
+
+%\setbeamercolor{title in head/foot}{parent=palette secondary}
+%\setbeamercolor{section in head/foot}{parent=palette tertiary}
+%\setbeamercolor{subsection in head/foot}{parent=palette quaternary}
+
+\setbeamercolor*{block body}{parent=structure,bg=vtblueA}
+\setbeamercolor*{block body alerted}{bg=vtblueA}
+\setbeamercolor*{block body example}{bg=vtgreenA}
+\setbeamercolor*{block title}{fg=white,bg=vtblueD}
+\setbeamercolor*{block title alerted}{use=alerted text,fg=alerted text.fg,bg=vtblueD}
+\setbeamercolor*{block title example}{fg=white,bg=vtgreenD}
+
+\setbeamercolor{item projected}{fg=black}
+
+\setbeamercolor*{sidebar}{parent=palette primary}
+
+\setbeamercolor{palette sidebar primary}{use=normal text,fg=normal text.fg}
+\setbeamercolor{palette sidebar secondary}{use=structure,fg=structure.fg}
+\setbeamercolor{palette sidebar tertiary}{use=normal text,fg=normal text.fg}
+\setbeamercolor{palette sidebar quaternary}{use=structure,fg=structure.fg}
+
+%\setbeamercolor*{separation line}{}
+%\setbeamercolor*{fine separation line}{}
+\setbeamercolor{titlelike}{parent=palette primary}
+\setbeamercolor{titlelike}{fg=white,bg=vtredB}
+
+
+\mode
+<all>
