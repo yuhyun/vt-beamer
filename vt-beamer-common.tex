@@ -1,0 +1,38 @@
+% $Id: vt-beamer-common.tex,v 1.6 2010-11-12 14:51:47 benchoff Exp $
+%
+% This file gets included in the preamble of all versions.
+%
+
+%\usepackage{pgf}
+\pdfimageapplygamma=0
+\pdfimagegamma=2200
+\pdfgamma=1000
+%
+%\usetheme{Rochester}
+%\usetheme{Berlin}
+\usetheme{Antibes}
+%\usecolortheme{albatross}
+\usecolortheme{vt}
+%
+% Turn off navigation symbols
+\setbeamertemplate{navigation symbols}{}
+%
+%\usepackage{hyperref}
+%\hypersetup{colorlinks=true,urlcolor=vtorange}
+\hypersetup{colorlinks=true,urlcolor=vtorange,linkcolor=white}
+%
+% A typographic convention for the BEAMER package name.
+% This is probably defined elsewhere.
+\newcommand{\BEAMER}{%
+        \textsc{BEAMER}
+}
+%
+% colorBar - Draw a colored box labeled with the color
+% arguments: 1 - color to show (used as background)
+%            2 - color for text label (foreground)
+\newcommand{\colorBar}[2]{%
+  \setbeamercolor{myColor}{fg=#2,bg=#1}
+  \begin{beamercolorbox}[wd=\textwidth,ht=2ex,dp=1ex,center]{myColor}
+      #1
+  \end{beamercolorbox}
+}

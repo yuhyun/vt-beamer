@@ -1,0 +1,44 @@
+This is a template for creating a presentation with the \LaTeX package
+BEAMER.  It includes a color theme that uses the Virginia Tech web palette.
+
+HISTORY
+  * Nov 2010 - original version by Phil Benchoff (benchoff@bev.net).
+
+LIMITATIONS/CAVEATS
+
+* If a PNG image is included, most versions of Adobe Acrobat Reader will
+  display the whole presentation with the wrong gamma.  Because of this,
+  the included logs is a JPG with a background that matches the
+  presentation.  If you use a different background color, you will have
+  to add it.  There is a .xcf file you can add a background to with GIMP.
+  You may be able to use another PDF reader to avoid the problem as well.
+  (This problem occurs with a PNG logo anyway.  It may not be all PNG
+  images.)
+
+* This presentation was developed with the BEAMER theme Antibes.  It
+  is not known how well the color palette will work with other themes.
+
+* Work on the handout, notes, and article versions is not complete
+  yet.
+
+QUICK START
+
+  Assuming you have all the LaTeX components necessary to use BEAMER,
+  just type "make" to create the presentation slides.  "make all" will
+  also create the other document types.
+
+FILES INCLUDED
+
+  README
+  Makefile 
+  beamercolorthemevt.sty - the color theme for VT colors.
+  vt-beamer.tex - the contents of the presentation
+  vt-beamer-common.tex - common preamble for all versions
+  vt-beamer-article.tex - the presentation in article format
+  vt-beamer-handout.tex - the presentation handout
+  vt-beamer-notes.tex - the presentation notes for the presenter
+  vt-beamer-slides.tex - the presentation slides
+  vt_shield_tag_transparent230.xcf - logo foreground in GIMP format
+  vt_shield_tag_transparent230.png - log foreground with transparent background
+  vt_shield_tag_vtbrownA230.jpg  - logo on vtbrownA background
+
