@@ -8,10 +8,13 @@
 .SUFFIXES:	.tex .pdf
 
 .tex.pdf:
-	pdflatex $*
-	pdflatex $*
+	pdflatex "\def\MyTheme{$(MY_THEME)} \input{$*}"
+	pdflatex "\def\MyTheme{$(MY_THEME)} \input{$*}"
 
 TITLE=vt-beamer
+# You can set your theme here or just add
+# MY_THEME=Whatever to the make command line.
+MY_THEME=Antibes
 
 # The default target is slides since that's what is used
 # most while creating the presentation.
