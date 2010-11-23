@@ -2,7 +2,8 @@
 %
 % This file gets included in the preamble of all versions.
 %
-
+\usepackage{ifthen}
+%
 %\usepackage{pgf}
 %\pdfimageapplygamma=0
 %\pdfimagegamma=2200
@@ -12,12 +13,42 @@
 % Define VT colors
 \input{vt-color-palette}
 %
-%\usetheme{Rochester}
+%
+% Themes to test/fix
+%
 %\usetheme{Berlin}
-\usetheme{Antibes}
-%\usetheme{Berkeley}
 %\usecolortheme{albatross}
+%
+%
+% MyTheme is defined in the Makefile from the MY_THEME variable.
+\usetheme{\MyTheme}
+%
+% Berkeley
+%\usetheme{Berkeley} % fix logo, sidebar font colors
+%   Make upper left logo box orange.
+%
+% Themes that seem to work
+%
+%\usetheme{Antibes}
+%\usetheme{Rochester}
+%
+% Use the VT color theme
 \usecolortheme{vt}
+%
+% Theme-specific tweaks.
+
+\ifthenelse{\equal{\MyTheme}{Antibes}}{%
+        \logo{\includegraphics[height=0.5cm]{vt_shield_tag_vtbrownA230.jpg}}
+}{}
+\ifthenelse{\equal{\MyTheme}{Berkeley}}{%
+        % Make upper left logo box orange.
+        \setbeamercolor{logo}{fg=black,bg=vtorange}
+}{}
+\ifthenelse{\equal{\MyTheme}{Rochester}}{%
+        \logo{\includegraphics[height=0.5cm]{vt_shield_tag_vtbrownA230.jpg}}
+}{}
+%
+% Final theme tweaks
 %
 % Turn off navigation symbols
 \setbeamertemplate{navigation symbols}{}
