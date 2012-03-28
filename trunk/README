@@ -29,17 +29,21 @@ QUICK START
 
 FILES INCLUDED
 
-  README
-  Makefile 
-  beamercolorthemevt.sty - the color theme for VT colors.
-  vt-beamer.tex - the contents of the presentation
-  vt-beamer-common.tex - common preamble for all versions
-  vt-beamer-article.tex - the presentation in article format
-  vt-beamer-handout.tex - the presentation handout
-  vt-beamer-notes.tex - the presentation notes for the presenter
-  vt-beamer-slides.tex - the presentation slides
-  vt_shield_tag_transparent230.xcf - logo foreground in GIMP format
-  vt_shield_tag_transparent230.png - log foreground with transparent background
-  vt_shield_tag_vtbrownA230.jpg  - logo on vtbrownA background
+  README - this file
 
+  The BEAMER theme:
+    beamercolorthemevt.sty - the color theme for VT colors.
+    vt-color-palette.sty - definitions of VT web colors.
+    vt_shield_tag_vtbrownA230.jpg  - logo on vtbrownA background
+
+  A sample presentation:
+    Makefile 
+    vt-beamer.tex - the contents of the presentation
+    vt-beamer-common.tex - common preamble for all versions
+    vt-beamer-article.tex - the presentation in article format
+    vt-beamer-handout.tex - the presentation handout
+    vt-beamer-notes.tex - the presentation notes for the presenter
+    vt-beamer-slides.tex - the presentation slides
+    vt_shield_tag_transparent230.xcf - logo foreground in GIMP format
+    vt_shield_tag_transparent230.png - log foreground with transparent background
 
